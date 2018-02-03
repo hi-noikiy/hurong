@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 182.133px;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="互融网，第一数字资产交易平台！我们拥有领先的技术实力、优质的客户服务和良好的用户体验，为广大数字货币爱好者提供一个自由的网上交换的平台。">
+	<meta name="keywords" content="互融网,数字货币交易,虚拟货币交易,数字资产,互融币交易行情,ybc互融币,abcTAI,太一元,btc比特币,ltc莱特币,狗狗币,fct公证币,irc储备币,vap增值积分,猴币
+">
+
+	<meta property="wb:webmaster" content="8af72a3a7309f0ee">
+	<title>
+		互融网｜综合数字资产交易平台
+	</title>
+</head>
+<body>
+	<div id="main">
+		<div class="main_box" style="padding:0; background:#fff;border:none;">
+			<div class="raise right clearfix">
+				<div class="Wf-div1">
+					<a onclick="history.back(-1)">返回</a>
+					<span>修改密码</span><strong style="color:red"></strong>
+				</div>
+				<div class="strip"></div>
+				<!--登录密码盒子 开始-->
+				<div class="cb-box1 tb-box1" id="tagContent0" style="">
+					<form method="post" onsubmit="return false;" onkeydown="if (event.keyCode == 13) {return false;}">
+						<!--    <form method="post" action="/user_index/pwd">-->
+						<p class="p5"><label>登录密码</label><input style="width: 5.44rem;" type="password" id="oldpwd" name="oldpwd" placeholder="请输入登录密码"></p>
+						<p class="p5"><label>新密码</label><input style="width: 5.44rem;" type="password" id="pwd" name="pwd" placeholder="登录密码(英文+数字不少于6位)"></p>
+						<p class="p5"><label>重复密码</label><input style="width: 5.44rem;" type="password" id="repwd" name="repwd" placeholder="请再次输入新密码"></p>
+						
+						<p class="p5" style="margin-top: 0.7rem;margin-left:1.6rem;"><input type="submit" style="margin-top:0.3rem" class="input_news_password" value="确认修改"  id="submitBtn"></p>
+					</form>
+				</div>
+				<!--登录密码盒子 结束-->
+				<!--交易密码盒子 开始-->
+				<div class="cb-box1 tb-box1" id="tagContent1" style="display: none">
+					<form method="post" onsubmit="return false;" onkeydown="if (event.keyCode == 13) { return false; }">
+						<p class="p5"><label>登录密码</label><input style="width: 5.44rem;" type="password" name="oldpwd" placeholder="请输入登录密码"></p>
+						<p class="p5"><label>交易密码</label><input style="width: 5.44rem;" type="password" name="oldpwdtrade" placeholder="请输入交易密码"></p>
+						<p class="p5"><label>新密码</label><input style="width: 5.44rem;" type="password" name="pwd" placeholder="登录密码(英文+数字不少于6位)"></p>
+						<p class="p5"><label>重复密码</label><input style="width: 5.44rem;" type="password" name="repwd" placeholder="请再次输入新密码"></p>
+						<p class="p5 p5_f">
+						</p>
+						<p class="p5" style="margin-top: 0.7rem"><input type="submit" style="margin-top:0.3rem" class="input_news_password" value="确认修改" onclick="Password.tradePwd();"></p>
+					</form>
+					<p class="wangjijiaoyi" style="margin-top:0.1rem"><a href="./repwdtrade">忘记交易密码？</a></p>
+				</div>
+				<!--交易密码盒子 结束-->
+				<div style="clear: both;"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<!-- 手机认证 -->
+  <div  hidden="hidden" class="verifyLayout">
+      <div class="dialog_bg"></div>
+      <div class="main dialogcon">
+         <div class="dialog-close">×</div>
+         <!--banner -->
+         <div class="verify middle ng-scope">
+            <form class="verify-form ng-scope ng-pristine ng-valid" action="" method="post" id="" >
+                <div class="verify-title"><span class="">手机认证</span></div>
+                <input type="text" readonly="" name="email"  style="display:none;" class="ng-pristine ng-valid">
+                <input type="hidden" name="operationType" value="mobile">
+                <div class="filed">
+                	<input type="hidden"  id="phone" >
+                    <input style="width:2rem;" type="text" id="phone_verifyCode1" name="wv_valicode" class="ipt">
+                    <button  id="getPhoneCode1" class="btn btn-grey" >发送验证码</button>
+                </div>
+                <div class="filed">
+                    <input type="button"  class="submit-phone" value="确定" class="btn btn-theme btn-block phone mobile-btn" >
+                </div>
+            </form>
+            <!-- end ngIf: verifyType==2 -->
+        </div>
+    </div>
+  </div>
+<!-- 手机认证结束 -->
+<!-- google认证 -->
+   <div class="verifyLayout1" style="display:none">
+      <div class="dialog_bg"></div>
+    <div class="main dialogcon">
+            <!--banner -->
+            <div class="dialog-close">×</div>
+            <div class="verify middle">
+                <!-- 谷歌二次验证 -->
+                <!-- ngIf: verifyType==1 -->
+                    <div class="verify-title"><span class="">谷歌认证</span></div>
+                    <input type="text" readonly="" name="email" style="display:none;" class="n">
+                    <input type="hidden" name="operationType" value="google">
+                    <div class="filed">
+                        <input type="text" id="googlee_verifyCode1" name="verifyCode" class="ipt googlee" id="verifyCode1">
+                        <p class="Validform_checktip f-nomargin f-left"></p>
+                    </div>
+                    <div class="filed">
+                       <input type="button" class="submit-google" value="确定" class="btn btn-orange btn-block goog" class="googleVerify-btn">
+                    </div>
+            </div>
+             </div>
+        </div>
+    </div>
+
+<!-- google认证结束 -->
+<!-- 双认证 -->
+  <div hidden="hidden"  class="verifyLayout2">
+         <div class="dialog_bg"></div>
+    <div class="main dialogcon">
+            <!--banner -->
+             <div class="dialog-close">×</div>
+            <div class="verify middle">
+               
+                <!-- ngIf: verifyType==0 -->
+                <div>
+                    <div class="verify-title"><span class="">二次验证</span></div>
+                    <div class="btns">
+                        <span class="btn cur">谷歌认证</span><span class="btn">手机认证</span>
+                    </div>
+                    <form class="verify-form" action="" method="post" id="googleVerify-form">
+
+                        <input type="text" id="email" name="email" style="display:none;">
+                        <input type="hidden" name="operationType" value="google">
+                        <div class="filed">
+                            <input type="text" id="googlee_verifyCode2" class="ipt  secondg" datatype="*" >
+                            <p class="Validform_checktip f-nomargin f-left"></p>
+                        </div>
+                        <div class="filed">
+                            <input type="button" class="submit-google" value="确定" class="btn btn-orange btn-block googleVerifyb " class="">
+                        </div>
+                    </form>
+                    <form class="verify-form1" style="display:none;" action="" method="post" id="mobile-form">
+                        <input type="text" readonly="" name="email" style="display:none;" class="">
+                        <input type="hidden" name="operationType" value="mobile">
+                        <div class="filed">
+                            <input style="width:186px;" type="text" id="phone_verifyCode2" name="verifyCode" class="ipt secondp">
+                           <button  id="getPhoneCode2" class="btn btn-grey" >发送验证码</button>
+                            <p class="Validform_checktip f-nomargin f-left"></p>
+                        </div>
+                        <div class="filed">
+                            <input type="button"  value="确定" class="btn btn-orange btn-block mobileb submit-phone" >
+                        </div>
+                    </form>
+                </div>
+                <!-- end ngIf: verifyType==0 -->
+            </div>
+        </div>
+    </div>
+<!-- 双认证 -->
+</body>
+
+</html>
+
+<script type="text/javascript" src="../../style/js/base.js"></script>
+<script type="text/javascript"  src="../../style/js/sea.js"></script>
+<script type="text/javascript">
+seajs.config({
+	base : basepath,
+	alias : {
+		"jquery" : "style/js/jquery/1.9.1.min.js",
+		"jq" : "style/js/jquery/jquery.js",
+		"layer" : "style/js/layer/layer.js"
+	},
+	preload : ['jquery','jq','layer'],
+	map:[['.js','.js?v='+new Date().getTime()]]
+});
+seajs.use(['style/js/extract/seajs/pwd.js'],function(r){
+	r.init();
+	r.sendsms();
+});
+</script>

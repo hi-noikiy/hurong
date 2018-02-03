@@ -1,0 +1,244 @@
+<html lang="en" style="font-size: 108.533px;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="互融网，第一数字资产交易平台！我们拥有领先的技术实力、优质的客户服务和良好的用户体验，为广大数字货币爱好者提供一个自由的网上交换的平台。">
+	<meta name="keywords" content="互融网,数字货币交易,虚拟货币交易,数字资产,互融币交易行情,ybc互融币,abcTAI,太一元,btc比特币,ltc莱特币,狗狗币,fct公证币,irc储备币,vap增值积分,猴币
+">
+	<title>  
+		互融网｜综合数字资产交易平台
+	</title>
+	<meta property="wb:webmaster" content="8af72a3a7309f0ee">
+</head>
+<body>
+	<div id="main">
+		<div class="main_box" style="background:#fff; padding:0;">
+			<div class="raise right clearfix">
+				<div style="display: block;" id="rmbout">
+					<div class="Wf-div1" style="border-bottom: none;">
+						<a onclick="history.back(-1)">返回</a>
+						<span><span class="languageCode"></span>提现</span>
+					</div>
+					<div class="cb-box1 tb-box1">
+						<form method="post">
+							<input type="hidden" id="maxWithdrawMoney" />
+							<input type="hidden" id="maxWithdrawMoneyOneTime" />
+							<p class="p4">
+								<label style="width:1.2rem;text-align:right;">可用余额</label><span id="hotmoney"></span>
+								<span style="color:#333"><strong><span class="languageCode"></span></strong></span>
+							</p>
+							<p class="p5"><label>提现银行</label>
+							<select id="bankselect" style="width:3.2rem;">
+								<option value="">请选择</option>
+							</select>
+							<a style="margin-top: 0px;padding:0;" class="p5_yha ft_bank_add">添加银行卡</a>
+								<input type="hidden" id="bankId" name="bank_id" value="">
+							</p>
+							<p class="p5">
+								<label>提现金额</label>
+								<input class="sum" id="money_rmb" type="text" name="money" autocomplete="off"><span class="pos_span"><span class="languageCode"></span></span></p>
+							<p class="p5"><label>实际到账</label>
+							<!-- 手续费 -->
+							<input type="hidden" id="actualMoney" />
+							<!-- 手续费率 -->
+							<input type="hidden" id="witfee" />
+							<input style="background:#ebebe4" type="text" class="sum" id="true_daozhang" disabled=""></p>
+							
+<!-- 							<p class="p5 p5_f">
+								<span>
+					            <label>验证码</label><input style="width: 3rem;" type="text" class="Txt22" name="phone_code" id="phone_code_login" placeholder="请输入短信验证码">
+					            </span>
+								<label class="verify phone_code verify_code" name="getPhoneCode" id="sendsmsBtn">获取短信验证码</label>
+							</p> -->
+							<p class="p5">
+								<input type="hidden" id="cnyout_over" value="0">
+								<input type="button" class="confirm" id="submit" value="确认提现" style="background:#70beff;width:99%;height:44px;color:white;font-size:13px">
+							</p>
+						</form>
+						<h5>提现请选择银行卡：</h5>
+						<p class="p6"> 提现审核工作时间24小时之内通过审核，节假日1-3天通过审核</p>
+						
+					</div>
+
+					<div class="cb-box3">
+						<h5>提现记录</h5>
+						<table class="ul2" id="list">
+						</table>
+						<div id="information" class="pagination">
+						
+						</div>
+						
+					</div>
+				</div>
+
+				<!-- 选择银行 start-->
+				<div class="addbank" style="display: none;">
+					<div class="strip" style="display: block;"></div>
+					<div class="Wf-div1" style="border-bottom: none;">
+						<a onclick="history.back(0)">返回</a>
+						<span>选择银行</span>
+					</div>
+					<ul class="xz_bank_ul">
+					</ul>
+					<a class="ft_bank_add">添加银行卡</a>
+				</div>
+				<!-- 选择银行 end-->
+				<!-- 添加银行 start-->
+				<div class="wf_addbank" style="display: none;">
+					<div class="strip" style="display: block;"></div>
+					<div class="Wf-div1">
+						<a onclick="location.reload()">返回</a>
+						<span>添加银行卡</span><strong style="color:red"></strong>
+					</div>
+					<div class="cb-box1 tb-box1">
+						<p class="p5"><label>开户银行</label>
+						<input type="hidden" id="bankname" />
+						<select name="bank" id="bank" class="loginValue" style="width:5.44rem;height:0.88rem;border-radius:5px;border: 1px solid #dddddd;">
+			                <option value="">请选择银行</option>
+			            </select>
+						</p>
+
+						<p class="p5">
+							<input type="hidden" id="provinceValue"/>
+							<label>银行地址:</label><select name="province" id="p1" style="width:2.62rem; border:1px solid #ddd;height: 0.88rem;border-radius: 5px;">
+								<option value="-1">省份</option>
+							</select>
+							<select name="city" id="c1" style="width:2.62rem; border:1px solid #DDD;height: 0.88rem;border-radius: 5px; margin-left:0.2rem ">
+								<option value="-1">城市</option>
+								</select>
+						</p>
+
+						<p class="p5"><label>银行卡号</label><input title="银行卡号" class="showerror" type="number" onkeyup="value=value.replace(/[^\d]/g,&#39;&#39;)" name="account" id="account" placeholder=""></p>
+
+						<p class="p5"><label>持卡人姓</label><input type="text" id="xing" disabled="disabled" placeholder=""></p>
+						<p class="p5"><label>持卡人名</label><input type="text" id="ming" disabled="disabled" placeholder=""></p>
+						<p class="p5"><label>开户支行</label><input type="text" name="subBank" id="subBank" placeholder=""></p>
+						<p class="p5" style="margin-bottom: 150px;"><a style="font-size: 0.28rem" class="addition sub" id="addBankcard">添加银行卡</a></p>
+					</div>
+					<input type="hidden" id="img_captcha" value="no">
+				</div>
+				<!-- 添加银行 end-->
+				<div style="clear: both;"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- 手机认证 -->
+  <div  hidden="hidden" class="verifyLayout">
+      <div class="dialog_bg"></div>
+      <div class="main dialogcon">
+         <div class="dialog-close">×</div>
+         <!--banner -->
+         <div class="verify middle ng-scope">
+            <form class="verify-form ng-scope ng-pristine ng-valid" action="" method="post" id="" >
+                <div class="verify-title"><span class="">手机认证</span></div>
+                <input type="text" readonly="" name="email"  style="display:none;" class="ng-pristine ng-valid">
+                <input type="hidden" name="operationType" value="mobile">
+                <div class="filed">
+                	<input type="hidden"  id="phone" >
+                    <input style="width:2rem;" type="text" id="phone_verifyCode1" name="wv_valicode" class="ipt">
+                    <button  id="getPhoneCode1" class="btn btn-grey" >发送验证码</button>
+                </div>
+                <div class="filed">
+                    <input type="button"  class="submit-phone" value="确定" class="btn btn-theme btn-block phone mobile-btn" >
+                </div>
+            </form>
+            <!-- end ngIf: verifyType==2 -->
+        </div>
+    </div>
+  </div>
+<!-- 手机认证结束 -->
+<!-- google认证 -->
+   <div class="verifyLayout1" style="display:none">
+      <div class="dialog_bg"></div>
+    <div class="main dialogcon">
+            <!--banner -->
+            <div class="dialog-close">×</div>
+            <div class="verify middle">
+                <!-- 谷歌二次验证 -->
+                <!-- ngIf: verifyType==1 -->
+                    <div class="verify-title"><span class="">谷歌认证</span></div>
+                    <input type="text" readonly="" name="email" style="display:none;" class="n">
+                    <input type="hidden" name="operationType" value="google">
+                    <div class="filed">
+                        <input type="text" id="googlee_verifyCode1" name="verifyCode" class="ipt googlee" id="verifyCode1">
+                        <p class="Validform_checktip f-nomargin f-left"></p>
+                    </div>
+                    <div class="filed">
+                        <input type="button" class="submit-google" value="确定" class="btn btn-orange btn-block goog" class="googleVerify-btn">
+                    </div>
+            </div>
+             </div>
+        </div>
+    </div>
+
+<!-- google认证结束 -->
+<!-- 双认证 -->
+  <div hidden="hidden"  class="verifyLayout2">
+         <div class="dialog_bg"></div>
+    <div class="main dialogcon">
+            <!--banner -->
+             <div class="dialog-close">×</div>
+            <div class="verify middle">
+               
+                <!-- ngIf: verifyType==0 -->
+                <div>
+                    <div class="verify-title"><span class="">二次验证</span></div>
+                    <div class="btns">
+                        <span class="btn cur">谷歌认证</span><span class="btn">手机认证</span>
+                    </div>
+                    <form class="verify-form" action="" method="post" id="googleVerify-form">
+
+                        <input type="text" id="email" name="email" style="display:none;">
+                        <input type="hidden" name="operationType" value="google">
+                        <div class="filed">
+                            <input type="text" id="googlee_verifyCode2" class="ipt  secondg" datatype="*" >
+                            <p class="Validform_checktip f-nomargin f-left"></p>
+                        </div>
+                        <div class="filed">
+                            <input type="button" class="submit-google" value="确定" class="btn btn-orange btn-block googleVerifyb " class="">
+                        </div>
+                    </form>
+                    <form class="verify-form1" style="display:none;" action="" method="post" id="mobile-form">
+                        <input type="text" readonly="" name="email" style="display:none;" class="">
+                        <input type="hidden" name="operationType" value="mobile">
+                        <div class="filed">
+                            <input style="width:186px;" type="text" id="phone_verifyCode2" name="verifyCode" class="ipt secondp">
+                           <button  id="getPhoneCode2" class="btn btn-grey" >发送验证码</button>
+                            <p class="Validform_checktip f-nomargin f-left"></p>
+                        </div>
+                        <div class="filed">
+                            <input type="button"  value="确定" class="btn btn-orange btn-block mobileb submit-phone" >
+                        </div>
+                    </form>
+                </div>
+                <!-- end ngIf: verifyType==0 -->
+            </div>
+        </div>
+    </div>
+<!-- 双认证 -->
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="../../style/js/base.js"></script>
+<script type="text/javascript"  src="../../style/js/sea.js"></script>
+<script type="text/javascript">
+seajs.config({
+	base : basepath,
+	alias : {
+		"jquery" : "style/js/jquery/1.9.1.min.js",
+		"jq" : "style/js/jquery/jquery.js",
+		"layer" : "style/js/layer/layer.js"
+	},
+	preload : ['jquery','jq','layer'],
+	map:[['.js','.js?v='+new Date().getTime()]]
+});
+seajs.use(['style/js/extract/seajs/rmbot.js'],function(r){
+	r.init();
+	r.bank();
+	r.sendsms();
+});
+</script>

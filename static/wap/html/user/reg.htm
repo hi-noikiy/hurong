@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>互融网｜第一数字资产交易平台</title>
+</head>
+<body>
+	<div class="cont">
+		<header class="header">
+			<a href="../coins.htm">
+				<div id ="log"  class="logo"></div>
+			</a>
+			<div class="nav">
+				<a href="../coins.htm">交易中心</a> <a href="login.htm">登录</a> <a
+					class="a-on" href="./reg.htm">注册</a>
+			</div>
+		</header>
+		<!--top end-->
+		<div class="ybc_section" id="reg-now" style="display: none;">
+			<!-- <ul class="ybc_user_nav clearfix Font18">
+				<li class="current"><span>1</span>邮箱注册</li>
+				<li id='currentpwd'><span>2</span>设置交易密码</li>
+				<li><span>3</span>实名认证</li>
+				<li><span>4</span>注册成功</li>
+			</ul> -->
+			<!-- <form class="ybc_userarea" id="form" method="post" action="./identify.html" onsubmit="return step2();">
+				<div id='step1'> -->
+			<form class="ybc_userarea" id="form" method="post"
+				action="./identify.html"">
+				<div class="ybc_user clearfix">
+					<div class="ybc_label left">
+						<label for="email">电子邮箱</label>
+					</div>
+					<div class="user_control ">
+						<input type="text" name='email' id="email" value="" />
+						<div class="ybc_hint left">
+							<strong class="msg_i" id="email_msg">i</strong><span
+								id="emailmsg">请输入电子邮箱，用于登录和找回密码</span>
+						</div>
+					</div>
+					<!--默认 i class="msg_i"  正确class="msg_error"  错误class="msg_ok"-->
+				</div>
+				<div class="ybc_user clearfix">
+					<div class="ybc_label left">
+						<label for="pwd">登录密码</label>
+					</div>
+					<div class="user_control ">
+						<input type="password" id="pwd" name="pwd" />
+						<div class="ybc_hint left">
+							<strong class="msg_i" id="pwd_msg">i</strong><span id="pwdmsg">登录密码（英文+数字不小于6位）</span>
+						</div>
+					</div>
+				</div>
+				<div class="ybc_user clearfix">
+					<div class="ybc_label left">
+						<label for="code">图形验证码</label>
+					</div>
+					<div class="user_control flex">
+						<span class="captcha"> <input type="text" name="captcha"
+							style="width: 97px;" class="verify_text" placeholder="请输入验证码"
+							id="registCode">
+						</span>
+						<div class="ybc_hint left">
+							<strong id="capturemsg"><img id="img_captcha"
+								title="换一张" alt="换一张" width="80"></strong>
+						</div>
+					</div>
+
+				</div>
+				<div class="ybc_user clearfix">
+					<div class="ybc_label left" style="margin-top: 0;">
+						<label for="pid">邀请码</label>
+					</div>
+					<div class="user_control ">
+						<input type='text' placeholder="选填" id='referralCode' value="">
+					</div>
+				</div>
+
+				<div class="ybc_user clearfix">
+					<div class="ybc_text left">
+						<input type="button" id="regBtn" value="提交" class="ybc_next" />
+					</div>
+				</div>
+		</div>
+		</form>
+	</div>
+	<div class="main" id="reg-prev">
+		<div class="main_box">
+			<div class="warning">
+				<h2>注册协议</h2>
+				<p id="regreg"></p>
+			</div>
+			<div class="ybc_user2 clearfix">
+				<div class="">
+					<input type="checkbox" name='agree' id="tongyi" />
+				</div>
+				<div class="ybc_hint left" style="margin-top: 0;">
+					<label for="tongyi">我已仔细阅读并同意 <a 
+						id="agreement" class="tycolor">《注册协议》</a>，同意在自担风险，自担损失的情况下参与交易
+					</label>
+				</div>
+				<div class="ybc_hint left">
+					<span id="agree"></span>
+				</div>
+			</div>
+			<div class="ybc_user1">
+				<div class="ybc_text">
+					<input type="submit" value="继续注册" id="next-btn" class="ybc_next"
+						style="background-color: #e1e1e1;" />
+				</div>
+				<!-- <div class="ybc_hint1">
+					<span id="agree"> <a href="" class="tycolor">取消</a></span>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<!--footer start-->
+	<!-- <div class="footer" style="padding: 0.5rem 0;">
+		<div>Copyright 2013-2017 互融网 All Rights Reserved. Powered by
+			互融金汇（北京）科技有限公司</div>
+	</div> -->
+	<!--footer end-->
+	<!-- <script type="text/javascript" src="../../style/js/sdmenu.js" tppabs="https://style/js/sdmenu.js"></script> -->
+	</div>
+</body>
+<script type="text/javascript" src="../../style/js/base.js"></script>
+<script type="text/javascript" src="../../style/js/sea.js"></script>
+<script type="text/javascript">
+	seajs.config({
+		base : basepath,
+		alias : {
+			"jquery" : "style/js/jquery/1.9.1.min.js",
+			"layer" : "style/js/layer/layer.js"
+		},
+		preload : [ 'jquery', 'layer' ],
+		map : [ [ '.js', '.js?v=' + new Date().getTime() ] ]
+	});
+	seajs.use([ 'style/js/extract/seajs/reg.js' ], function(l) {
+		l.init();
+	});
+</script>
+</html>

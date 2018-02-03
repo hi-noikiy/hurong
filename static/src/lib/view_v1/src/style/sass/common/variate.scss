@@ -1,0 +1,23 @@
+$commonColor:#f4753f;
+
+$commonFontSize:16px;
+
+$txt-footer:#354e65;
+
+$commonbg:#ff4500;
+
+@mixin flex-between{
+  display: flex;
+  justify-content:space-between;
+}
+
+@mixin common-height{
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+@mixin flex-center{
+  display: flex;
+align-items: center;
+justify-content: center;
+}

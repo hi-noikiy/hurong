@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 182.133px;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="互融网，第一数字资产交易平台！我们拥有领先的技术实力、优质的客户服务和良好的用户体验，为广大数字货币爱好者提供一个自由的网上交换的平台。">
+	<meta name="keywords" content="互融网,数字货币交易,虚拟货币交易,数字资产,互融币交易行情,ybc互融币,abcTAI,太一元,btc比特币,ltc莱特币,狗狗币,fct公证币,irc储备币,vap增值积分,猴币
+">
+
+	<meta property="wb:webmaster" content="8af72a3a7309f0ee">
+	<title>
+		互融网｜综合数字资产交易平台
+	</title>
+</head>
+<body>
+	<div class="Wf-div1" style="border-bottom: none;">
+		<a onclick="history.back(-1)">返回</a> <span>推荐返佣</span>
+	</div>
+	<div class="container-fluid person-con">
+				<!-- begin page-header -->
+				<div class="row" style="margin-bottom:15px;">
+					<div class="panel_wrap_head wrap_head">
+						<div class="">
+							<ul class="wrap_tabs">
+								<li role="presentation" class="active pull-left">
+									<a href="javascript:void(0);">邀请推荐</a>
+								</li>
+	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end page-header -->
+				<!-- 邀请推荐中间内容 -->
+					<div class="invite ng-scope">
+					<div class="f-cb">
+						<div class="inviteLink f-fl">
+							<div class="item ng-binding">
+							    <dl>
+							    <dt><label>我的邀请码： </label></dt>
+							    <dd>
+							      <span id="inviteLink" style="border:1px solid #ddd;padding:0.1rem;"></span><span class="iconfont fa fa-file-text icon-copy copy-btn" data-clipboard-target="#inviteLink" title="复制到剪切板">复制</span></dd>
+							    </dl>
+								
+							</div>
+							<div class="item">
+							    <dl>
+							    <dt><label>邀请链接： </label></dt>
+							    <dd><input id="inviteLink1" type="text" name="inviteLink" value="" readonly="">
+							    <span class="iconfont fa fa-file-text icon-copy copy-btn" data-clipboard-target="#inviteLink1" title="复制到剪切板">复制</span>
+							    </dd>
+							    </dl>
+								
+							</div>
+							<div class="item">
+							    <dl>
+							    <dt><label>已推荐的朋友： </label><strong id="num" class="ng-binding">0</strong></dt>
+							    </dl>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- 邀请推荐中间内容结束 -->
+				<!-- 返佣记录 -->
+				<div class="commission">
+				 <table>
+				  <thead>
+				    <tr>
+				      <th>返佣币种</th>
+				      <th>已返佣金额</th>
+				      <th>未返佣金额</th>
+				    </tr>
+				  </thead>
+				  <tbody id="rebateRecord" >
+				    <tr>
+				     <td>btn</td>
+				     <td>111</td>
+				     <td>222</td>
+				    </tr>
+				  </tbody>
+				 
+				  
+				 </table>
+				</div>
+				<!-- 返佣记录end -->
+                  
+			</div>
+</body>
+
+</html>
+
+<script type="text/javascript" src="../../style/js/base.js"></script>
+<script type="text/javascript"  src="../../style/js/sea.js"></script>
+<script type="text/javascript">
+seajs.config({
+	base : basepath,
+	alias : {
+		"jquery" : "style/js/jquery/1.9.1.min.js",
+		"jq" : "style/js/jquery/jquery.js",
+		"layer" : "style/js/layer/layer.js"
+	},
+	preload : ['jquery','jq','layer'],
+	map:[['.js','.js?v='+new Date().getTime()]]
+});
+seajs.use(['style/js/extract/seajs/recommend.js'],function(r){
+	r.init();
+});
+</script>

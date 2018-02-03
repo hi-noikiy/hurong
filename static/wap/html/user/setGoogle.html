@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="description"
+	content="互融网，第一数字资产交易平台！我们拥有领先的技术实力、优质的客户服务和良好的用户体验，为广大数字货币爱好者提供一个自由的网上交换的平台。" />
+<meta name="keywords"
+	content="互融网,数字货币交易,虚拟货币交易,数字资产,互融币交易行情,ybc互融币,abcTAI,太一元,btc比特币,ltc莱特币,狗狗币,fct公证币,irc储备币,vap增值积分,猴币
+" />
+<title>互融网｜综合数字资产交易平台</title>
+<meta property="wb:webmaster" content="8af72a3a7309f0ee" />
+
+</head>
+<body>
+	<header class="header">
+        <a id="logo" href="coins.htm">
+            <div id ="log"  class="logo"></div>
+        </a>
+        <div class="nav" id="isToken">
+        </div>
+    </header>
+	<style>
+.bullet_p a:last-child, .bullet_p span:last-child {
+	width: 49%;
+}
+
+.tip-box {
+	color: red;
+	display: inline-block;
+	text-indent: 1.7rem;
+	margin-top: 0.2rem;
+}
+</style>
+	<div class="Wf-div1">
+		<a onclick="history.back(-1)">返回</a> <span>设置谷歌认证</span><strong
+			style="color: red"></strong>
+	</div>
+	<div class="strip"></div>
+
+	<div class="cb-box1 tb-box1 safecontent">
+
+		<form id="" action="" method="post" style="padding: 0 5%;" class="">
+		<input type="hidden"  class="mobile" />
+			<input type="hidden" name="secretKey" value="XXN4VSWT74IKUMND">
+			<ul class="googleAuthen-items">
+				<li class="f-cb">
+					<div class="item-title" style="line-height: 34px;">
+						第一步：根据您的手机系统类型，下载并安装谷歌验证器</div>
+					<div class="item-body downloads f-fl">
+						<a
+							href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8"
+							target="_blank"><i
+							class="icon-googleAuthen icon-googleAuthen-ios"></i></a> <a
+							href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2"
+							target="_blank"><i
+							class="icon-googleAuthen icon-googleAuthen-play"></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="item-title ">第二步：使用谷歌验证器APP扫描一下二维码，或添加密文进行手工验证</div>
+					<div class="item-body">
+						<div class="code">
+							<div class="ewm" id="ewm">
+								<div id="qrcodeTable"></div>
+							</div>
+							<div class="text">
+								<span class="secret-tag fl">密文</span> <input class="text-con fl"
+									class="googlekey"> <input type="hidden" class="mobile" />
+								<span class="secret-tag fl"  onclick="window.location.reload()" style="cursor: pointer;">刷新</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li style="margin-bottom: 0">
+					<div class="item-title">第三步：填入手机显示的动态密码以激活谷歌两步验证：</div>
+					<div class="item-body">
+						<div class="faCode">
+							<input type="password" id="accountGoogleWord" datatype="*"
+								nullmsg="The password code should not be empty."> <input
+								type="hidden" name="password" id="accountGoogleWord">
+						</div>
+						<div id="errorMsg"></div>
+					</div>
+				</li>
+			</ul>
+			<div class="btns" style="padding-top: 25px;">
+				<span class="btn btn-orange" id="submitBtn">启用</span>
+			</div>
+		</form>
+	</div>
+	<div style="clear: both;"></div>
+
+	<script type="text/javascript" src="../../style/js/base.js"></script>
+	<script type="text/javascript" src="../../style/js/sea.js"></script>
+	<script type="text/javascript">
+	
+
+		seajs.config({
+			base : basepath,
+			alias : {
+				"jquery" : "style/js/jquery/1.9.1.min.js",
+				"layer" : "style/js/layer/layer.js"
+			},
+			preload : [ 'jquery', 'layer' ],
+			map : [ [ '.js', '.js?v=' + new Date().getTime() ] ]
+		});
+		seajs.use([ 'style/js/extract/seajs/setGoogle.js' ], function(l) {
+			l.init();
+		});
+	</script>
+
+</body>

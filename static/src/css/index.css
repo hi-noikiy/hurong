@@ -1,0 +1,404 @@
+.content{
+	overflow:hidden;
+}
+.dealBox{
+	margin:20px 0;
+    overflow:hidden;
+}
+
+.dealBox li{
+	float:left;
+	width:390px;
+	height:160px;
+	padding:0 20px;
+}
+.dealBox .dealOne{
+	background:url(../images/index/amountBg_1.png) no-repeat;
+}
+.dealBox .dealTwo{
+	background:url(../images/index/amountBg_2.png) no-repeat;
+	margin:0 15px;
+}
+.dealBox .dealThree{
+	background:url(../images/index/amountBg_3.png) no-repeat;
+}
+.amountTop{
+	line-height: 50px;
+	color:#333333;
+	font-size:16px;
+	font-family: "Arial";
+	font-weight: 600;
+}
+.amountTop span{
+	float:right;
+	font-size:18px;
+	color:#333333;
+	font-weight: normal;
+}
+.amountBottom{
+	font-size:14px;
+	color:#666666;
+}
+.amountBottom .amountInfo{
+	color:#333333;
+	font-size:18px;
+}
+.amountBottom .amountItem{
+	font-size:14px;
+	color:#666666;
+}
+.amountBottom .upSign{
+	color:#79e113;
+	font-size:14px;
+	float:right;
+	display: inline-block;
+
+}
+.amountBottom .downSign{
+	color:#fd3838;
+	font-size:14px;
+	float:right;
+	display: inline-block;
+}
+.marketBox{
+	overflow: hidden;
+	margin-bottom:30px;
+}
+.marketBox li{
+	width:390px;
+	float:left;
+}
+.marketBox li:nth-child(2){
+	margin:0 15px;
+}
+.marketBox li h3{
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	font-size:16px;
+	background:#f5f5f5;
+	border-top:1px solid #ebebeb;
+}
+.marketBox li table{
+	width:100%;
+	border:1px solid #ebebeb;
+	border-bottom:0;
+}
+.marketBox li table tr{
+	height:30px;
+	line-height: 30px;
+    border-bottom:1px solid #ebebeb;
+    text-align: center;
+}
+.marketBox li table th{
+	width:25%;
+	font-size:14px;
+	color:#666666;
+}
+.marketBox li table th span{
+	width:7px;
+	height:11px;
+	background:url(../images/index/downs.png) no-repeat;
+	display: inline-block;
+	margin-left:10px;
+}
+.marketBox li table td{
+	width:25%;
+	font-size:14px;
+	color:#333333;
+}
+.marketBox li table .upCent{
+	color:#79e113;
+}
+.marketBox li table .downCent{
+	color:#fd3838;
+}
+.alignRight{
+	text-align: right;
+	padding-right:10px;
+}
+.bottomBg {
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    background:#f5f5f5;
+    text-align: center;
+}
+.bottomBg .tableDown{
+	width: 0;
+    height: 0;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #333333;
+    border-left: 7px solid transparent;
+    margin:0 auto;
+}
+
+.section{
+	width:100%;
+	overflow: hidden;
+}
+.section_1{
+	background:#fcfcfc;
+}
+.sectionTop{
+	margin-top:70px;
+}
+.sectionTitle{
+	font-size:36px;
+	color:#333333;
+	text-align: center;
+}
+.sectionText{
+	font-size:18px;
+	color:#666666;
+	text-align: center;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.sectionBorder{
+	width:80px;
+	height:4px;
+	margin:0 auto;
+	background:#ffa001;
+}
+.sectionBottom{
+	overflow:hidden;
+	margin-top:50px;
+}
+.sectionBottom .stepIcon{
+	float:left;
+	width:12px;
+	height:20px;
+	background:url(../images/index/stepIcon.png) no-repeat;
+	margin:85px 44px 0;
+}
+.stepBox{
+	width:225px;
+	float:left;
+}
+.stepTitle{
+	font-size:24px;
+	color:#333333;
+	text-align: center;
+	clear:both;
+	margin:10px 0 10px 0;
+}
+.stepCenter{
+	clear:both;
+	overflow: hidden;
+}
+.stepNum{
+	font-size:60px;
+	color:#999999;
+	font-weight: bold;
+	float:left;
+}
+.stepWord{
+	width:162px;
+	line-height: 40px;
+	float:right;
+	font-size:18px;
+	color:#333333;
+	word-break:break-all;
+}
+.onceBtn{
+	clear:both;
+	width:100px;
+	height:34px;
+	line-height: 34px;
+	background:#ffa001;
+	color:#FFFFFF;
+	text-align: center;
+	font-size:18px;
+	margin:0 auto;
+	border-radius: 5px;
+}
+.bigButton{
+	width:130px;
+}
+
+/*公告区域*/
+.section_2{
+	background:#FFFFFF;
+}
+
+.newsBox{
+	width:560px;
+}
+.newsTitle{
+	color:#333333;
+	font-size:24px;
+	text-align: left;
+	margin-bottom:30px;
+}
+.newsTitle span{
+	font-size:16px;
+	color:#999999;
+	float:right;
+	margin-right:30px;
+}
+.newsTitle span a{
+	color:#999999;	
+}
+.axisBox{
+	height:95px;
+	clear:both;
+}
+.timeLeft{
+	width:100px;
+	padding-top:30px;
+	float:left;
+	position:relative;
+}
+.yellowBall{
+	width:12px;
+	height:12px;
+	background:#ffa001;
+	border-radius: 50%;
+	position:absolute;
+	right:-10.5px;
+	top:32px;
+}
+.newsRight{
+	width:455px;
+	height:95px;
+	float:right;
+	padding-top:26px;
+	border-left:1px solid #e8e8e8;
+	padding-left:20px;
+}
+.newsName{
+	clear:both;
+	font-size:18px;
+	color:#333333;
+	margin-bottom:5px;
+}
+.newsItem{
+	clear:both;
+	font-size:16px;
+	color:#666666;
+	line-height: 20px;
+}
+/*第三部分*/
+.section_3{
+	background:#fcfcfc;
+	height:650px;
+}
+.phoneL{
+	width:438px;
+	height:375px;
+	background:url(../images/index/phoneBig.png) no-repeat;
+}
+.phoneC{
+	font-size:18px;
+	color:#FFFFFF;
+	margin:75px 60px 0 110px;
+}
+.phoneR{
+	margin-top:40px;
+}
+.loadBox{
+	width:210px;
+	height:46px;
+	background:#ffa001;
+	border-radius: 5px;
+	padding:10px 20px;
+	margin-bottom:20px;
+}
+.loadBox a{
+	color:#FFFFFF;
+}
+.loadBox:nth-child(2){
+	background:#999999;
+}
+.phoneIcon{
+	width:26px;
+	height:26px;
+	display: inline-block;
+	float:left;
+}
+.pnone_1{
+	background:url(../images/index/appleIcon.png) no-repeat;
+}
+.pnone_2{
+	background:url(../images/index/androidIcon.png) no-repeat;
+}
+.cut{
+	width:2px;
+	height:26px;
+	margin:0 15px;
+	float:left;
+	background:#FFFFFF;
+	display: inline-block;
+}
+.phoneR img{
+	width:156px;
+	height:156px;
+	margin:11px;
+}
+.paddingDown{
+	padding-top:20px;
+}
+/*部分4*/
+.section_4{
+	height:600px;
+}
+.safeBox{
+	width:220px;
+	margin-top:30px;
+	float:left;
+	margin-right:105px;
+}
+.safeBox:nth-child(4){
+    margin-right:0;
+}
+.safeImg{
+	width:170px;
+	height:170px;
+	clear:both;
+	margin-left:30px;
+}
+.safeImg img{
+	width:100%;
+	height:100%:;
+}
+.safeWord{
+	font-size:18px;
+	color:#333333;
+	line-height: 30px;
+	margin-top:20px;
+}
+/*提供服务 5*/
+.section_5{
+	height:650px;
+	background:#fcfcfc;
+}
+.offerBox{
+	width:283px;
+	height:202px;
+	float:left;
+	border:1px solid #ffa001;
+	margin-right:22px;
+}
+.offerBox:nth-child(4){
+	margin-right:0;
+}
+.offerImg{
+	width:281px;
+	height:173px;
+	clear:both;
+}
+.offerImg img{
+	width:100%;
+	height:100%:;
+}
+.offerWord{
+	width:283px;
+	height:28px;
+	line-height: 28px;
+	font-size:12px;
+	color:#333333;
+	text-align: center;
+	clear:both;
+}

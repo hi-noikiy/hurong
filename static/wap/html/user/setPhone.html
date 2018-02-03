@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="description"
+	content="互融网，第一数字资产交易平台！我们拥有领先的技术实力、优质的客户服务和良好的用户体验，为广大数字货币爱好者提供一个自由的网上交换的平台。" />
+<meta name="keywords"
+	content="互融网,数字货币交易,虚拟货币交易,数字资产,互融币交易行情,ybc互融币,abcTAI,太一元,btc比特币,ltc莱特币,狗狗币,fct公证币,irc储备币,vap增值积分,猴币
+" />
+<title>互融网｜综合数字资产交易平台</title>
+<meta property="wb:webmaster" content="8af72a3a7309f0ee" />
+
+</head>
+<body>
+	<header class="header">
+		 <a href="../coins.htm">
+                <div id ="log"  class="logo"></div>
+            </a>
+		<div class="nav" id="isToken"></div>
+	</header>
+	<style>
+.bullet_p a:last-child, .bullet_p span:last-child {
+	width: 49%;
+}
+
+.tip-box {
+	color: red;
+	display: inline-block;
+	text-indent: 1.7rem;
+	margin-top: 0.2rem;
+}
+</style>
+	<div class="Wf-div1">
+		<a onclick="history.back(-1)">返回</a> <span>设置手机认证</span><strong style="color: red"></strong>
+	</div>
+	<div class="strip"></div>
+
+	<div class="cb-box1 tb-box1">
+		
+		<form method="post" action="">
+			<p class="p5">
+				<label>手机号</label> 
+				<input type="text" id="wv_phone" style="width: 5.04rem;"class="loginValue" name="phone" placeholder="请输入手机号">
+			</p>
+			<label class="tip-box phone_note" style="display: none">手机号不正确</label>
+			<p class="p5 p5_f">
+				<span> 
+				 <label style="margin-right: 4px;">短信验证</label> 
+				 <input type="text" id="wv_valicode" class="Txt22" name="code" placeholder="请输入短信验证码"
+					autocomplete="new-password">
+				</span> 
+			<button style="margin-top: -10px;" id="getPhoneCode" name="getPhoneCode"  type="button" class="verify phone_code verify_code">发送验证码</button>
+			</p>
+			<label class="tip-box phone_note" style="display: none">短信验证码不正确</label>
+			<p class="p5" style="margin-top: 0.7rem; text-align:center;">
+				<input type="button" class="input_news_password" id="submit-phone"	value="确认提交" />
+			</p>
+		</form>
+	</div>
+	<div style="clear: both;"></div>
+	
+	<script type="text/javascript" src="../../style/js/base.js"></script>
+	<script type="text/javascript" src="../../style/js/sea.js"></script>
+	<script type="text/javascript">
+	
+
+		seajs.config({
+			base : basepath,
+			alias : {
+				"jquery" : "style/js/jquery/1.9.1.min.js",
+				"layer" : "style/js/layer/layer.js"
+			},
+			preload : [ 'jquery', 'layer' ],
+			map : [ [ '.js', '.js?v=' + new Date().getTime() ] ]
+		});
+		seajs.use([ 'style/js/extract/seajs/setPhone.js' ], function(l) {
+			l.init();
+			l.sendsms();
+		});
+	</script>
+	
+</body>

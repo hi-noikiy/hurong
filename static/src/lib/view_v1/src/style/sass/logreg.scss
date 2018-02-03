@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import "./common/variate.scss";
+
+.reg-box {
+  min-height: 760px;
+  background: url("../images/reg_02.jpg") repeat-y center top;
+  width: 100%;
+}
+
+.reg {
+  form {
+    background: #fff;
+    width: 514px;
+    padding: 30px 80px 42px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-65%);
+            transform: translate(-50%,-65%);
+    border-radius: 4px;
+
+    .logreg-title {
+      @include flex-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+
+      span {
+        font-size: $commonFontSize;
+        color: #181818;
+      }
+    }
+  }
+}
+
+.input-lg {
+  font-size: 14px!important;
+}

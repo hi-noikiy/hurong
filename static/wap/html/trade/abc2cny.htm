@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="description"
+	content="互融网，第一数字资产交易平台！我们拥有领先的技术实力、优质的客户服务和良好的用户体验，为广大数字货币爱好者提供一个自由的网上交换的平台。" />
+<meta name="keywords"
+	content="互融网,数字货币交易,虚拟货币交易,数字资产,互融币交易行情,ybc互融币,abcTAI,太一元,btc比特币,ltc莱特币,狗狗币,fct公证币,irc储备币,vap增值积分,猴币
+" />
+<title>互融网｜综合数字资产交易平台</title>
+<meta property="wb:webmaster" content="8af72a3a7309f0ee" />
+</head>
+<body>
+	<header class="header">
+		<a href="javascript:void(0);" id="logo"><div id ="log"  class="logo"></div></a>
+		<div class="nav" id="isToken"></div>
+	</header>
+	<div class="strip"></div>
+	<div class="j-box1">
+		<h2 style="text-indent: 0.1rem;">
+			<img src="../../style/images/coin/coin_abc.png"
+				style="float: left; margin-right: 0px" />
+			<p id="title"></p>
+			<!--                K线图-->
+			<!-- 		<span onclick="clicks();">
+			<img src="../../style/images/image/icon_kline_03.png"  alt="" class="img">
+			<em class="return" style="display:none;color:#f60;margin-right:0.3rem; margin-top:0.2rem;float:right;height:0.5rem;font-size:13px;text-align:center;line-height:0.5rem">返回</em>
+		</span> -->
+		</h2>
+		<table class="j_boxtab">
+			<tr>
+				<td>最新价</td>
+				<td>最高价</td>
+				<td>最低价</td>
+				<td>日成交量</td>
+			</tr>
+			<tr>
+				<td class='new_price'>加载中...</td>
+				<td class='24h_max'>加载中...</td>
+				<td class='24h_min'>加载中...</td>
+				<td class='24h_count'>加载中...</td>
+			</tr>
+		</table>
+	</div>
+	<!--交易区域-->
+	<div id="trade_area">
+		<div class="j-box2" style="padding: 0 0.3rem; position: relative;">
+
+			<!--	导航-->
+			<div class="j-nav">
+				<a href="javascript:;" class="dangqian">买入</a> 
+				<a href="javascript:;">卖出</a> 
+				<a href="javascript:;" class="">我的委托</a>
+				<a href="javascript:;" class="">历史委托</a>
+				<a href="javascript:;" class="last">交易记录</a>
+				<div style="clear: both;"></div>
+			</div>
+			<!--买入卖出-->
+			<div class="">
+				<div class="j-L">
+					<div style="height: 5.76rem;">
+
+						
+						<!-- 	//卖出委托 -->
+						<table class="j-tabL latest_list weituo">
+							
+							<tbody id="view_depth_ask">
+
+							</tbody>
+						</table>
+						<!-- 最新价 -->
+						 <p id="new_price2" class="abc-latest" >0.00</p>
+						<!-- 最新价 -->
+						<!-- //买入委托 -->
+						<table class="j-tabL latest_list weituo">
+							<thead>
+							</thead>
+							<tbody id="view_new_price">
+
+							</tbody>
+						</table>
+						<table class="j-tabL1">
+							<tbody id="colorhtml">
+							</tbody>
+						</table>
+					</div>
+
+
+					<a href="../moretrade/moretrust/name/abc2cny.htm"
+						style="margin-top: 0.35rem; width: 3.3rem; height: 0.8rem; display: inline-block; line-height: 0.8rem; text-align: center; font-size: 0.3rem; border: 1px solid #ddd; color: #666; display: none; border-radius: 5px;"
+						class="moretrust">更多委托</a>
+				</div>
+				<div class="buys" style="height: auto">
+					<div class="j-R">
+						<div style="position: relative;">
+							<p class="j-p1_top" style="margin-bottom: 0.07rem;">
+								<span>买入价格</span>
+							</p>
+							<input class="j-p2" type="text" name="price" placeholder="买入价格" id="coinpricein">
+							<i class="legal_tender"
+								style="position: absolute; z-index: 2; font-size: 0.22rem; right: 0.15rem; top: 0.65rem; color: #999;"></i>
+						</div>
+						
+						<div style="position: relative">
+							<p class="j-p1">买入数量</p>
+
+							<input type="text" class="coinbuy-number j-p2" placeholder="买入数量"  name="buynum"
+								id="numberin" autocomplete="off" /> 
+						</div>
+						<div style="position: relative;">
+							<p class="j-p1" class="buys" style="clear: both">
+								<span>交易额</span> <span class="posSpan1"  style="float: right">手续费：<span id="buy_fee"></span>%
+									<span class="legal_tender"></span></span>
+							</p>
+
+							<input class="coinbuy-number j-p2" readonly="true" name="buynum"
+								id="coinin_sumprice" autocomplete="off" type="text" >
+							<i
+								style="position: absolute; z-index: 2; font-size: 0.22rem; right: 0.15rem; top: 0.65rem; color: #999;"><span class="legal_tender"></span></i>
+						</div>
+						<div class="MaiChu">
+							<input type="button" id="trustbtnin" class="submit" value="买入"
+								style="background: red; font-size: 0.3rem; border-radius: 5px;" />
+						</div>
+
+					</div>
+					<div style="clear: both;"></div>
+
+				</div>
+
+				<div class="sales" style="height: auto; display: none">
+					<div class="j-R">
+						<div style="position: relative;">
+							<p class="j-p1_top">卖出价格</p>
+							<input type="text" class="buyinput j-p2" placeholder="卖出价格"  id="coinpriceout">
+							<i
+								style="position: absolute; z-index: 2; font-size: 0.22rem; right: 0.15rem; top: 0.65rem; color: #999;"><span class="legal_tender"></span></i>
+						</div>
+						<!-- <p class="j-p3" style="display: none">
+							可卖：<b id="coinsale_max"
+								onclick="$('#numberout').val(this.innerHTML)"
+								title="点击将数值写入数量输入框" style="font-weight: bold;"></b>
+						</p>
+						<div style="display: none">
+							卖出比例：
+							<div id="sale-SliderVal" class="ratio">0%</div>
+							<div id="sale-slider" data_slide='sale'></div>
+						</div> -->
+						<div style="position: relative;">
+							<p class="j-p1">卖出数量</p>
+							<input type="text" class="buyinput coinsale-number j-p2"
+								 id="numberout" placeholder="卖出数量" autocomplete="off" /> <!-- <i
+								style="position: absolute; z-index: 2; font-size: 0.22rem; right: 0.15rem; top: 0.65rem; color: #999;"><span class="legal_tender"></span></i> -->
+						</div>
+						<div style="position: relative;">
+							<p class="j-p1" class="buys">
+								交易额
+								<!--						<b  id="coinout_sumprice">0.00</b> -->
+								<span class="posSpan1" style="float: right">手续费：<i><span id="sell_fee"></span>%
+										<span class="legal_tender"></span></i></span>
+							</p>
+							<input type="text" class="buyinput coinsale-number j-p2"
+								id="coinout_sumprice" autocomplete="off" /> <i
+								style="position: absolute; z-index: 2; font-size: 0.22rem; right: 0.15rem; top: 0.65rem; color: #999;"><span class="legal_tender"></span></i>
+						</div>
+						<div class="MaiChu">
+							<input type="button" class="submit" id="trustbtnout" value="卖出"
+								style="background: #669900; font-size: 0.3rem; border-radius: 5px;" />
+						</div>
+						<div class="cur-usable" style=" border: 1px solid #ddd;background: #f5f5f5;margin: 15px 0;padding: 10px;font-size:  14px;">
+						   <!-- 登陆之后 -->
+						    <p class="sell">可用：</p> 
+						    <p class="buys">可用：</p>
+							<p style="text-align:  center; margin-top: 20px;">
+								<a class="btn" style="text-align:  center; margin: 0 auto;display: inline-block;width: 50%;line-height: 10px;border: 1px solid #70beff; border-radius:  4px;">充值</a>
+							</p> 
+						   <!-- 登陆之后 -->
+						   <!-- 未登录的时候 -->
+						     <p style="text-align:center;">登录后进行交易</p>
+						   <!-- 未登录的时候 -->
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+
+				</div>
+				<!--提示-->
+				<!-- 	<div class="msg" style="height:35px;font-size:13px;text-align:center;line-height:35px;">
+				<span  style="color:red">数字货币交易具有极高的风险，投资需谨慎！</span>
+			</div> -->
+
+			</div>
+			<!--	我的委托-->
+			<div class="j-box3 wt-box3" id="entrust" style="display: none">
+				<h3>
+					我的委托   <input id="bulk_Revocation" type="button"  value="批量撤销">
+				</h3>
+				<table class="j-tab3">
+
+					<tbody id="table_current">
+
+					</tbody>
+				</table>
+				<div class="pagination">
+					<a id="ten" class="current">10</a>
+					<a id="twenty" class="current">20</a>
+					<a id="hundred" class="current">全部</a>
+				</div>
+			</div>
+		    <div style="clear: both;"></div>
+			<!--成交记录-->
+			<!--	我的成交-->
+			<div class="mysuccess" style="display: none">
+				<table class="j-tab3">
+					<thead>
+						<tr>
+							<th>成交时间</th>
+							<th>成交价</th>
+							<th>委托量</th>
+							<th>成交总价</th>
+						</tr>
+					</thead>
+					<tbody id="mysuccess">
+	
+					</tbody>
+				</table>
+	
+				<div class="j-div3">
+					<a href="javascript:;" id="more"></a>
+				</div>
+			</div>
+
+			<format id="price_float" data="3"></format>
+	</div>
+	<!--历史委托-->
+	<div class="j-box3 wt-box3" id="history" style="display: none">
+		<h3>
+			历史委托 <!-- <select id="status"  onchange="Historical_delegation()" >
+				<option value="0" selected="selected">全部</option>
+				<option value="1">买</option>
+				<option value="2">卖</option>
+			</select> -->
+		</h3>
+		<table class="j-tab3">
+			<tbody id="more_history">
+
+			</tbody>
+		</table>
+		<div id="Historical_delegation" class="pagination">
+			
+		</div>
+	</div>
+	<!--交易记录-->
+	<div class="j-box3 wt-box3" id="record" style="display: none">
+		<h3>
+			交易记录 <!-- <select id="transaction">
+				<option value="0" selected="selected">全部</option>
+				<option value="1">买</option>
+				<option value="2">卖</option>
+			</select> -->
+		</h3>
+		<table class="j-tab3">
+			<tbody id="Tran_history">
+
+			</tbody>
+		</table>
+		<div id="Transaction_history" class="pagination">
+				
+		</div>
+	</div>
+	</div>
+
+	<!--k线-->
+	<!-- 	<div id="kline" class="j-box2" style="display: none">
+		<iframe style="border: 0px; width: 100%; height: 565px;"
+			src="../market-symbol=abc2cny.htm" /></iframe>
+	</div> -->
+
+	<!--隐藏值-->
+	<div class="hiddenValue" style="display: none">
+		<input type="hidden" value="abc2cny" id="coinnames"> <input
+			type="hidden" value="CNY" class="cointo"> <input
+			type="hidden" id="pnumber"> <input type="hidden"
+			id="historynum"> <input type="hidden" id="logid" value="">
+		<ul>
+			<li>买一价 / 卖一价<br /> <span id='24h_sell'>加载中...</span><span>
+					/ </span><span id='24h_buy'>加载中...</span></li>
+		</ul>
+	</div>
+
+	<!-- <footer class="footer">
+		  <div class="footer_kefu_news">
+        <a href="tel:4008367667"><i></i>4008-367-667</a>
+        <a><i></i>hry@hry.com</a>
+    </div>
+
+		   <p  style="text-align:center" >
+			<span>
+			<a href="javascript:void(0);" class="a1" id="phone">手机版</a>
+				<i>|</i>
+				<a href="javascript:void(0);" class="a2" id="window">电脑版</a>
+			</span>
+            </p>
+
+		<div>Copyright2013-2016 互融网</div>
+	</footer> -->
+
+</body>
+</html>
+
+<script type="text/javascript" src="../../style/js/base.js"></script>
+<script type="text/javascript" src="../../style/js/sea.js"></script>
+<script type="text/javascript">
+	seajs.config({
+		base : basepath,
+		alias : {
+			"jquery" : "style/js/jquery/1.9.1.min.js",
+			"jquery2" : "style/js/bootstrap/js/jquery-2.0.3.js",
+			"jq" : "style/js/jquery/jquery.js",
+			"layer" : "style/js/layer/layer.js"
+		},
+		preload : [ 'jquery', 'jquery2', 'jq', 'layer' ],
+		map : [ [ '.js', '.js?v=' + new Date().getTime() ] ]
+	});
+	seajs.use([ 'style/js/extract/seajs/abc2cny.js' ], function(a) {
+		a.init();
+	});
+</script>

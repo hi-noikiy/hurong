@@ -1,0 +1,74 @@
+<html lang="en" style="font-size: 48px;">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description"
+	content="互融网，第一数字资产交易平台！我们拥有领先的技术实力、优质的客户服务和良好的用户体验，为广大数字货币爱好者提供一个自由的网上交换的平台。">
+<meta name="keywords"
+	content="互融网,数字货币交易,虚拟货币交易,数字资产,互融币交易行情,ybc互融币,abcTAI,太一元,btc比特币,ltc莱特币,狗狗币,fct公证币,irc储备币,vap增值积分,猴币
+">
+<title>互融网｜综合数字资产交易平台</title>
+<meta property="wb:webmaster" content="8af72a3a7309f0ee">
+</head>
+
+<body>
+	<div id="main">
+		<div class="main_box" style="background: #fff; padding: 0; border: 0;">
+			<div class="raise right clearfix">
+				<div class="Wf-div1">
+					<a id ="go">返回</a> <span id="symbol"></span><strong
+						id="coinout_showtips" style="color: red"></strong>
+				</div>
+				<form id="withdraw_address_form" name="withdraw_address_form">
+					<div class="cb-box1 tb-box1">
+						<input type="hidden" name="currencyType" id="currencyType"  />
+						<p class="p5">
+							<label>钱包地址</label><input type="text" id="publicKey"
+								placeholder="">
+						</p>
+						<p class="p5">
+							<label>备注</label><input type="text" id="remark"
+								placeholder="">
+						</p>
+						
+						<p class="p5 p5_f">
+							<span> </span>
+						</p>
+						<p class="p5" style="margin-bottom: 150px;">
+							<a style="font-size: 0.28rem" id="savepublickey"
+								href="javascript:;"">确认增加</a>
+						</p>
+					</div>
+				</form>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+
+</body>
+
+
+<script type="text/javascript" src="../../style/js/base.js"></script>
+<script type="text/javascript" src="../../style/js/sea.js"></script>
+<script type="text/javascript">
+	seajs.config({
+		base : basepath,
+		alias : {
+			"jquery" : "style/js/jquery/1.9.1.min.js",
+			"jq" : "style/js/jquery/jquery.js",
+			"layer" : "style/js/layer/layer.js"
+		},
+		preload : [ 'jquery', 'jq', 'layer' ],
+		map : [ [ '.js', '.js?v=' + new Date().getTime() ] ]
+	});
+	seajs.use([ 'style/js/extract/seajs/newadd.js' ], function(r) {
+		r.init();
+	});
+</script>
+
+</html>
